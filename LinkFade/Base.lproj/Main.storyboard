@@ -64,6 +64,9 @@
                                 <rect key="frame" x="16" y="841" width="396" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Створити обліковий запис"/>
+                                <connections>
+                                    <segue destination="442-yD-3If" kind="show" id="Jco-T4-x9l"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="АБО" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36Q-n3-td8">
                                 <rect key="frame" x="196.66666666666666" y="804" width="34.666666666666657" height="21"/>
@@ -127,6 +130,73 @@
             </objects>
             <point key="canvasLocation" x="-367" y="-132"/>
         </scene>
+        <!--Sign Up Flow View Controller-->
+        <scene sceneID="0D0-V8-4T4">
+            <objects>
+                <viewController id="442-yD-3If" customClass="SignUpFlowViewController" customModule="LinkFade" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hcn-Ib-mmb">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ми допоможемо вам створити обліковий запис за кілька простих кроків." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXg-bd-qIC">
+                                <rect key="frame" x="32" y="285" width="364" height="38.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIR-NB-Snf">
+                                <rect key="frame" x="16" y="343.33333333333331" width="396" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Розпочати"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQe-h0-ppd">
+                                <rect key="frame" x="118.66666666666667" y="862.33333333333337" width="190.66666666666663" height="29.666666666666629"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Уже маєте обліковий запис?">
+                                    <fontDescription key="titleFontDescription" name=".SFUI-Semibold" family=".AppleSystemUIFont" pointSize="14"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="popToLoginViewController" destination="442-yD-3If" eventType="touchUpInside" id="Akd-lW-Eh5"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GqI-es-lGz">
+                                <rect key="frame" x="0.0" y="853.33333333333337" width="428" height="1"/>
+                                <color key="backgroundColor" systemColor="separatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="ajJ-eL-Lym"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Реєстрація у LinkFade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aE4-bK-tSx">
+                                <rect key="frame" x="104.66666666666669" y="241" width="219" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yug-H6-NNk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bQe-h0-ppd" firstAttribute="centerX" secondItem="hcn-Ib-mmb" secondAttribute="centerX" id="8Lb-9M-gFl"/>
+                            <constraint firstItem="AXg-bd-qIC" firstAttribute="leading" secondItem="hcn-Ib-mmb" secondAttribute="leading" constant="32" id="9BK-5N-cRT"/>
+                            <constraint firstItem="AXg-bd-qIC" firstAttribute="top" secondItem="aE4-bK-tSx" secondAttribute="bottom" constant="20" id="Bed-vQ-yJh"/>
+                            <constraint firstItem="pIR-NB-Snf" firstAttribute="top" secondItem="AXg-bd-qIC" secondAttribute="bottom" constant="20" id="FVf-9c-W2M"/>
+                            <constraint firstItem="bQe-h0-ppd" firstAttribute="top" secondItem="GqI-es-lGz" secondAttribute="bottom" constant="8" symbolic="YES" id="FZ2-yn-aNG"/>
+                            <constraint firstItem="GqI-es-lGz" firstAttribute="leading" secondItem="hcn-Ib-mmb" secondAttribute="leading" id="LkT-hg-lDV"/>
+                            <constraint firstAttribute="trailing" secondItem="GqI-es-lGz" secondAttribute="trailing" id="NGg-ZS-J1I"/>
+                            <constraint firstAttribute="trailing" secondItem="AXg-bd-qIC" secondAttribute="trailing" constant="32" id="WXR-h0-PUP"/>
+                            <constraint firstItem="pIR-NB-Snf" firstAttribute="leading" secondItem="hcn-Ib-mmb" secondAttribute="leading" constant="16" id="cva-es-buz"/>
+                            <constraint firstItem="bQe-h0-ppd" firstAttribute="bottom" secondItem="yug-H6-NNk" secondAttribute="bottom" id="gLT-JR-J02"/>
+                            <constraint firstAttribute="trailing" secondItem="pIR-NB-Snf" secondAttribute="trailing" constant="16" id="m9P-4a-i1g"/>
+                            <constraint firstItem="aE4-bK-tSx" firstAttribute="top" secondItem="yug-H6-NNk" secondAttribute="top" constant="150" id="q5t-aZ-P1a"/>
+                            <constraint firstItem="aE4-bK-tSx" firstAttribute="centerX" secondItem="hcn-Ib-mmb" secondAttribute="centerX" id="seX-mp-xQr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="kVk-zB-qhI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GOq-vB-Vz2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="704" y="-132"/>
+        </scene>
     </scenes>
     <resources>
         <image name="LoginImage" width="640" height="426"/>
@@ -135,6 +205,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
