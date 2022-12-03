@@ -8,7 +8,7 @@
 import UIKit
 
 class SignUpFlowViewController: UIViewController {
-    @IBAction func popToLoginViewController() {
+    @IBAction private func popToLoginViewController() {
         navigationController?.popToRootViewController(animated: true)
     }
 }
