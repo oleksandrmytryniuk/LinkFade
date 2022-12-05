@@ -32,9 +32,8 @@ final class SignUpService: SignUpServiceProtocol {
     }
     
     private func saveUserProfile(_ profile: UserProfile, completion: @escaping Completion) {
-        let database = Firestore.firestore()
         var document: DocumentReference?
-        document = database.collection("userProfiles").addDocument(data: profile.data) { error in
+        document = Database.shared.userProfiles.addDocument(data: profile.data) { error in
             if let error {
                 completion(.failure(error))
             } else if let id = document?.documentID {

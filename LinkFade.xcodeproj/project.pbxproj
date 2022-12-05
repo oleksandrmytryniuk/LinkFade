@@ -22,6 +22,12 @@
 		0E29A2612932BEA600034EE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E29A2602932BEA600034EE3 /* Assets.xcassets */; };
 		0E29A2642932BEA600034EE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E29A2622932BEA600034EE3 /* LaunchScreen.storyboard */; };
 		0E29A26D2932C2C100034EE3 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E29A26C2932C2C100034EE3 /* SignInViewController.swift */; };
+		0E4A843E293E2CF400C768EB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4A843D293E2CF400C768EB /* MenuViewController.swift */; };
+		0E4A8440293E301700C768EB /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4A843F293E301700C768EB /* MenuViewModel.swift */; };
+		0E4A8442293E36DB00C768EB /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4A8441293E36DB00C768EB /* UserData.swift */; };
+		0E4A8444293E4D6F00C768EB /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4A8443293E4D6F00C768EB /* Database.swift */; };
+		0E4A8446293E615D00C768EB /* MenuViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4A8445293E615D00C768EB /* MenuViewModelProtocol.swift */; };
+		0E4A8448293E62CB00C768EB /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4A8447293E62CB00C768EB /* BaseTabBarController.swift */; };
 		0E69D51329342154002F05AA /* SignUpFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E69D51229342154002F05AA /* SignUpFlowViewController.swift */; };
 		0EB88FF4293A8BD6002F3432 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB88FF3293A8BD6002F3432 /* PostsViewController.swift */; };
 		0EB88FF6293B6251002F3432 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EB88FF5293B6251002F3432 /* GoogleService-Info.plist */; };
@@ -58,6 +64,12 @@
 		0E29A2632932BEA600034EE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E29A2652932BEA600034EE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E29A26C2932C2C100034EE3 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		0E4A843D293E2CF400C768EB /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		0E4A843F293E301700C768EB /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
+		0E4A8441293E36DB00C768EB /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		0E4A8443293E4D6F00C768EB /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		0E4A8445293E615D00C768EB /* MenuViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModelProtocol.swift; sourceTree = "<group>"; };
+		0E4A8447293E62CB00C768EB /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		0E69D51229342154002F05AA /* SignUpFlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFlowViewController.swift; sourceTree = "<group>"; };
 		0EB88FF3293A8BD6002F3432 /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
 		0EB88FF5293B6251002F3432 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -111,7 +123,9 @@
 			children = (
 				0E04E37D2937DBF100C14A53 /* Identifiable.swift */,
 				0EB89006293B7FFE002F3432 /* AlertBuilder.swift */,
+				0E4A8443293E4D6F00C768EB /* Database.swift */,
 				0EB89008293BA689002F3432 /* BaseNavigationController.swift */,
+				0E4A8447293E62CB00C768EB /* BaseTabBarController.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -160,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				0E04E37C2937DBC400C14A53 /* Core */,
+				0E4A843C293E2CA800C768EB /* Menu */,
 				0EB88FF2293A8B45002F3432 /* Posts */,
 				0E04E3722937CC3300C14A53 /* UserProfile */,
 				0E29A26B2932BF8B00034EE3 /* Authentication */,
@@ -181,6 +196,17 @@
 				0ECCE51529366F1100480653 /* SignUp */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		0E4A843C293E2CA800C768EB /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				0E4A843D293E2CF400C768EB /* MenuViewController.swift */,
+				0E4A843F293E301700C768EB /* MenuViewModel.swift */,
+				0E4A8445293E615D00C768EB /* MenuViewModelProtocol.swift */,
+				0E4A8441293E36DB00C768EB /* UserData.swift */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 		0EB88FF2293A8B45002F3432 /* Posts */ = {
@@ -308,6 +334,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E04E3742937CC5100C14A53 /* UserGender.swift in Sources */,
+				0E4A8446293E615D00C768EB /* MenuViewModelProtocol.swift in Sources */,
+				0E4A8448293E62CB00C768EB /* BaseTabBarController.swift in Sources */,
 				0E29A26D2932C2C100034EE3 /* SignInViewController.swift in Sources */,
 				0E120ED02938FF5200C1DB4D /* UserProfile.swift in Sources */,
 				0EB88FFF293B6860002F3432 /* SignInService.swift in Sources */,
@@ -323,13 +351,17 @@
 				0ECCE51729366F3800480653 /* FullNameViewController.swift in Sources */,
 				0EB8900C293BBF21002F3432 /* SignUpService.swift in Sources */,
 				0EB89013293BF856002F3432 /* SignUpServiceProtocol.swift in Sources */,
+				0E4A843E293E2CF400C768EB /* MenuViewController.swift in Sources */,
 				0E120ECE2938FCBB00C1DB4D /* SignUpViewController.swift in Sources */,
 				0EB88FF4293A8BD6002F3432 /* PostsViewController.swift in Sources */,
 				0E04E3802938077D00C14A53 /* EmailViewController.swift in Sources */,
 				0ECCE51B2936715B00480653 /* UserProfileBuilder.swift in Sources */,
+				0E4A8442293E36DB00C768EB /* UserData.swift in Sources */,
 				0EB89009293BA689002F3432 /* BaseNavigationController.swift in Sources */,
 				0E04E37E2937DBF100C14A53 /* Identifiable.swift in Sources */,
+				0E4A8440293E301700C768EB /* MenuViewModel.swift in Sources */,
 				0E29A25A2932BEA600034EE3 /* SceneDelegate.swift in Sources */,
+				0E4A8444293E4D6F00C768EB /* Database.swift in Sources */,
 				0ECCE519293670A000480653 /* BirthdayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
