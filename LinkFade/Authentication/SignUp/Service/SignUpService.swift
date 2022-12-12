@@ -32,13 +32,21 @@ final class SignUpService: SignUpServiceProtocol {
     }
     
     private func saveUserProfile(_ profile: UserProfile, completion: @escaping Completion) {
+        let collection = Firestore.firestore().collection("userProfiles")
         var document: DocumentReference?
-        document = Database.shared.userProfiles.addDocument(data: profile.data) { error in
+        collection.getDocuments { snapshot, error in
             if let error {
                 completion(.failure(error))
-            } else if let id = document?.documentID {
-                NSLog("Збережено документ профілю користувача з ідентифікатором: \(id)")
-                completion(.success(()))
+            } else {
+                profile.graphNode = snapshot?.count
+                document = collection.addDocument(data: profile.data) { error in
+                    if let error {
+                        completion(.failure(error))
+                    } else if let id = document?.documentID {
+                        NSLog("Збережено документ профілю користувача з ідентифікатором: \(id)")
+                        completion(.success(()))
+                    }
+                }
             }
         }
     }

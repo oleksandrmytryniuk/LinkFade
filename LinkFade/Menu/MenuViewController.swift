@@ -17,7 +17,7 @@ final class MenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel?.binding = { [weak self] userData in
-            userData.loadProfileImage { image in
+            ImageLoader(imageURL: userData.photoURL).loadImage { image in
                 self?.profilePhotoImageView.image = image
             }
             self?.userNameLabel.text = userData.userName

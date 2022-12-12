@@ -25,7 +25,6 @@
 		0E4A843E293E2CF400C768EB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4A843D293E2CF400C768EB /* MenuViewController.swift */; };
 		0E4A8440293E301700C768EB /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4A843F293E301700C768EB /* MenuViewModel.swift */; };
 		0E4A8442293E36DB00C768EB /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4A8441293E36DB00C768EB /* UserData.swift */; };
-		0E4A8444293E4D6F00C768EB /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4A8443293E4D6F00C768EB /* Database.swift */; };
 		0E4A8446293E615D00C768EB /* MenuViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4A8445293E615D00C768EB /* MenuViewModelProtocol.swift */; };
 		0E4A8448293E62CB00C768EB /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4A8447293E62CB00C768EB /* BaseTabBarController.swift */; };
 		0E69D51329342154002F05AA /* SignUpFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E69D51229342154002F05AA /* SignUpFlowViewController.swift */; };
@@ -44,6 +43,15 @@
 		0ECCE519293670A000480653 /* BirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECCE518293670A000480653 /* BirthdayViewController.swift */; };
 		0ECCE51B2936715B00480653 /* UserProfileBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECCE51A2936715B00480653 /* UserProfileBuilder.swift */; };
 		0ECCE51D2936CE9600480653 /* GenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECCE51C2936CE9600480653 /* GenderViewController.swift */; };
+		0EE8BB2E29476DC200ABA15C /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE8BB2629476DC200ABA15C /* FriendsViewController.swift */; };
+		0EE8BB2F29476DC200ABA15C /* FriendsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE8BB2729476DC200ABA15C /* FriendsViewModel.swift */; };
+		0EE8BB3029476DC200ABA15C /* InviteFriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE8BB2829476DC200ABA15C /* InviteFriendCell.swift */; };
+		0EE8BB3129476DC200ABA15C /* FriendsSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE8BB2929476DC200ABA15C /* FriendsSearchViewModel.swift */; };
+		0EE8BB3229476DC200ABA15C /* FriendsSearchViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE8BB2A29476DC200ABA15C /* FriendsSearchViewModelProtocol.swift */; };
+		0EE8BB3329476DC200ABA15C /* FriendsSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE8BB2B29476DC200ABA15C /* FriendsSearchViewController.swift */; };
+		0EE8BB3429476DC200ABA15C /* FriendRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE8BB2C29476DC200ABA15C /* FriendRequest.swift */; };
+		0EE8BB3529476DC200ABA15C /* TableContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE8BB2D29476DC200ABA15C /* TableContentType.swift */; };
+		0EE8BB3729477B3500ABA15C /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE8BB3629477B3500ABA15C /* ImageLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,7 +75,6 @@
 		0E4A843D293E2CF400C768EB /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		0E4A843F293E301700C768EB /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
 		0E4A8441293E36DB00C768EB /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
-		0E4A8443293E4D6F00C768EB /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		0E4A8445293E615D00C768EB /* MenuViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModelProtocol.swift; sourceTree = "<group>"; };
 		0E4A8447293E62CB00C768EB /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		0E69D51229342154002F05AA /* SignUpFlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFlowViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +90,15 @@
 		0ECCE518293670A000480653 /* BirthdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayViewController.swift; sourceTree = "<group>"; };
 		0ECCE51A2936715B00480653 /* UserProfileBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileBuilder.swift; sourceTree = "<group>"; };
 		0ECCE51C2936CE9600480653 /* GenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderViewController.swift; sourceTree = "<group>"; };
+		0EE8BB2629476DC200ABA15C /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		0EE8BB2729476DC200ABA15C /* FriendsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewModel.swift; sourceTree = "<group>"; };
+		0EE8BB2829476DC200ABA15C /* InviteFriendCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteFriendCell.swift; sourceTree = "<group>"; };
+		0EE8BB2929476DC200ABA15C /* FriendsSearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsSearchViewModel.swift; sourceTree = "<group>"; };
+		0EE8BB2A29476DC200ABA15C /* FriendsSearchViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsSearchViewModelProtocol.swift; sourceTree = "<group>"; };
+		0EE8BB2B29476DC200ABA15C /* FriendsSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsSearchViewController.swift; sourceTree = "<group>"; };
+		0EE8BB2C29476DC200ABA15C /* FriendRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendRequest.swift; sourceTree = "<group>"; };
+		0EE8BB2D29476DC200ABA15C /* TableContentType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableContentType.swift; sourceTree = "<group>"; };
+		0EE8BB3629477B3500ABA15C /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,9 +139,9 @@
 			children = (
 				0E04E37D2937DBF100C14A53 /* Identifiable.swift */,
 				0EB89006293B7FFE002F3432 /* AlertBuilder.swift */,
-				0E4A8443293E4D6F00C768EB /* Database.swift */,
 				0EB89008293BA689002F3432 /* BaseNavigationController.swift */,
 				0E4A8447293E62CB00C768EB /* BaseTabBarController.swift */,
+				0EE8BB3629477B3500ABA15C /* ImageLoader.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -174,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				0E04E37C2937DBC400C14A53 /* Core */,
+				0EE8BB2529476DC200ABA15C /* Friends */,
 				0E4A843C293E2CA800C768EB /* Menu */,
 				0EB88FF2293A8B45002F3432 /* Posts */,
 				0E04E3722937CC3300C14A53 /* UserProfile */,
@@ -251,6 +268,21 @@
 				0E120ED42939130700C1DB4D /* Presentation */,
 			);
 			path = SignUp;
+			sourceTree = "<group>";
+		};
+		0EE8BB2529476DC200ABA15C /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				0EE8BB2629476DC200ABA15C /* FriendsViewController.swift */,
+				0EE8BB2729476DC200ABA15C /* FriendsViewModel.swift */,
+				0EE8BB2829476DC200ABA15C /* InviteFriendCell.swift */,
+				0EE8BB2929476DC200ABA15C /* FriendsSearchViewModel.swift */,
+				0EE8BB2A29476DC200ABA15C /* FriendsSearchViewModelProtocol.swift */,
+				0EE8BB2B29476DC200ABA15C /* FriendsSearchViewController.swift */,
+				0EE8BB2C29476DC200ABA15C /* FriendRequest.swift */,
+				0EE8BB2D29476DC200ABA15C /* TableContentType.swift */,
+			);
+			path = Friends;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,13 +373,18 @@
 				0EB88FFF293B6860002F3432 /* SignInService.swift in Sources */,
 				0E04E37B2937DA3F00C14A53 /* GenderCell.swift in Sources */,
 				0EB89005293B6BD5002F3432 /* SignInServiceProtocol.swift in Sources */,
+				0EE8BB2F29476DC200ABA15C /* FriendsViewModel.swift in Sources */,
+				0EE8BB3429476DC200ABA15C /* FriendRequest.swift in Sources */,
 				0ECCE51D2936CE9600480653 /* GenderViewController.swift in Sources */,
 				0EB89007293B7FFE002F3432 /* AlertBuilder.swift in Sources */,
 				0E29A2582932BEA600034EE3 /* AppDelegate.swift in Sources */,
 				0E120ED229390BB800C1DB4D /* SignUpCredentials.swift in Sources */,
+				0EE8BB3529476DC200ABA15C /* TableContentType.swift in Sources */,
+				0EE8BB3229476DC200ABA15C /* FriendsSearchViewModelProtocol.swift in Sources */,
 				0E69D51329342154002F05AA /* SignUpFlowViewController.swift in Sources */,
 				0E04E382293810EA00C14A53 /* PasswordViewController.swift in Sources */,
 				0E120ED62939662C00C1DB4D /* SignUpProcessingViewController.swift in Sources */,
+				0EE8BB3129476DC200ABA15C /* FriendsSearchViewModel.swift in Sources */,
 				0ECCE51729366F3800480653 /* FullNameViewController.swift in Sources */,
 				0EB8900C293BBF21002F3432 /* SignUpService.swift in Sources */,
 				0EB89013293BF856002F3432 /* SignUpServiceProtocol.swift in Sources */,
@@ -356,12 +393,15 @@
 				0EB88FF4293A8BD6002F3432 /* PostsViewController.swift in Sources */,
 				0E04E3802938077D00C14A53 /* EmailViewController.swift in Sources */,
 				0ECCE51B2936715B00480653 /* UserProfileBuilder.swift in Sources */,
+				0EE8BB3729477B3500ABA15C /* ImageLoader.swift in Sources */,
 				0E4A8442293E36DB00C768EB /* UserData.swift in Sources */,
 				0EB89009293BA689002F3432 /* BaseNavigationController.swift in Sources */,
+				0EE8BB3329476DC200ABA15C /* FriendsSearchViewController.swift in Sources */,
+				0EE8BB2E29476DC200ABA15C /* FriendsViewController.swift in Sources */,
+				0EE8BB3029476DC200ABA15C /* InviteFriendCell.swift in Sources */,
 				0E04E37E2937DBF100C14A53 /* Identifiable.swift in Sources */,
 				0E4A8440293E301700C768EB /* MenuViewModel.swift in Sources */,
 				0E29A25A2932BEA600034EE3 /* SceneDelegate.swift in Sources */,
-				0E4A8444293E4D6F00C768EB /* Database.swift in Sources */,
 				0ECCE519293670A000480653 /* BirthdayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

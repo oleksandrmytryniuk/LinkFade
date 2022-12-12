@@ -6,6 +6,7 @@
 //
 
 import FirebaseAuth
+import FirebaseFirestore
 
 final class MenuViewModel: MenuViewModelProtocol {
     private var listener: AuthStateDidChangeListenerHandle?
@@ -27,7 +28,8 @@ final class MenuViewModel: MenuViewModelProtocol {
             completion(nil)
             return
         }
-        let query = Database.shared.userProfiles.whereField("userId", isEqualTo: userId)
+        let collection = Firestore.firestore().collection("userProfiles")
+        let query = collection.whereField("userId", isEqualTo: userId)
         query.getDocuments { snapshot, error in
             let profileData = snapshot?.documents.first?.data()
             if error == nil, let profileData, let profile = UserProfile(data: profileData) {
