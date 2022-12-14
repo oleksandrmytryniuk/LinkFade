@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class BaseNavigationController: UINavigationController {
+final class MainNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         (viewControllers.first as? SignInViewController)?.service = SignInService()

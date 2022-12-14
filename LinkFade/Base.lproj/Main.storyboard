@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Base Navigation Controller-->
+        <!--Main Navigation Controller-->
         <scene sceneID="MU8-f2-5SG">
             <objects>
-                <navigationController id="u0m-5E-5Jm" customClass="BaseNavigationController" customModule="LinkFade" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="u0m-5E-5Jm" customClass="MainNavigationController" customModule="LinkFade" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0Z1-56-ah9">
                         <rect key="frame" x="0.0" y="47" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -59,7 +59,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1K-Cp-0Wl">
-                                <rect key="frame" x="139.33333333333337" y="519.66666666666663" width="149.66666666666663" height="35"/>
+                                <rect key="frame" x="139" y="519.66666666666663" width="150" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Забули пароль?"/>
                             </button>
@@ -72,13 +72,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="АБО" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36Q-n3-td8">
-                                <rect key="frame" x="196.66666666666666" y="804" width="34.666666666666657" height="21"/>
+                                <rect key="frame" x="196.66666666666666" y="804" width="35" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gsD-pE-Lw2">
-                                <rect key="frame" x="239.33333333333337" y="814" width="99" height="1"/>
+                                <rect key="frame" x="239.66666666666663" y="814" width="99" height="1"/>
                                 <color key="backgroundColor" systemColor="separatorColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="X2B-tO-Cht"/>
@@ -161,7 +161,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQe-h0-ppd">
-                                <rect key="frame" x="118.66666666666667" y="862.33333333333337" width="190.66666666666663" height="29.666666666666629"/>
+                                <rect key="frame" x="118.66666666666669" y="862" width="191" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Уже маєте обліковий запис?">
                                     <fontDescription key="titleFontDescription" name=".SFUI-Semibold" family=".AppleSystemUIFont" pointSize="14"/>
@@ -171,7 +171,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GqI-es-lGz">
-                                <rect key="frame" x="0.0" y="853.33333333333337" width="428" height="1"/>
+                                <rect key="frame" x="0.0" y="853" width="428" height="1"/>
                                 <color key="backgroundColor" systemColor="separatorColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="ajJ-eL-Lym"/>
@@ -217,7 +217,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ofK-FQ-dUl">
-                                <rect key="frame" x="118.66666666666667" y="862.33333333333337" width="190.66666666666663" height="29.666666666666629"/>
+                                <rect key="frame" x="118.66666666666669" y="862" width="191" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Уже маєте обліковий запис?">
                                     <fontDescription key="titleFontDescription" name=".SFUI-Semibold" family=".AppleSystemUIFont" pointSize="14"/>
@@ -227,14 +227,14 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O4C-qT-Nmu">
-                                <rect key="frame" x="0.0" y="853.33333333333337" width="428" height="1"/>
+                                <rect key="frame" x="0.0" y="853" width="428" height="1"/>
                                 <color key="backgroundColor" systemColor="separatorColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="lGg-N7-QZy"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Як Вас звати?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0q-nc-OD7">
-                                <rect key="frame" x="146" y="241" width="136.33333333333337" height="24"/>
+                                <rect key="frame" x="146" y="241" width="136" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" systemColor="systemBlueColor"/>
                                 <nil key="highlightedColor"/>
@@ -307,7 +307,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Коли Ваш день народження?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edp-op-1Sv">
-                                <rect key="frame" x="71.333333333333343" y="241" width="285.33333333333326" height="24"/>
+                                <rect key="frame" x="71.666666666666686" y="241" width="285" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" systemColor="systemBlueColor"/>
                                 <nil key="highlightedColor"/>
@@ -333,7 +333,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chx-HA-AyV">
-                                <rect key="frame" x="118.66666666666667" y="862.33333333333337" width="190.66666666666663" height="29.666666666666629"/>
+                                <rect key="frame" x="118.66666666666669" y="862" width="191" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Уже маєте обліковий запис?">
                                     <fontDescription key="titleFontDescription" name=".SFUI-Semibold" family=".AppleSystemUIFont" pointSize="14"/>
@@ -343,7 +343,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QAm-zo-59e">
-                                <rect key="frame" x="0.0" y="853.33333333333337" width="428" height="1"/>
+                                <rect key="frame" x="0.0" y="853" width="428" height="1"/>
                                 <color key="backgroundColor" systemColor="separatorColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="veN-OB-Euq"/>
@@ -420,7 +420,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Чоловіча" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwp-KS-Ru4">
-                                                    <rect key="frame" x="20" y="12.333333333333334" width="71.333333333333329" height="19.333333333333329"/>
+                                                    <rect key="frame" x="20" y="12.666666666666664" width="71.666666666666671" height="19"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                                     <color key="textColor" systemColor="systemBlueColor"/>
                                                     <nil key="highlightedColor"/>
@@ -452,7 +452,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQQ-wz-moF">
-                                <rect key="frame" x="118.66666666666667" y="862.33333333333337" width="190.66666666666663" height="29.666666666666629"/>
+                                <rect key="frame" x="118.66666666666669" y="862" width="191" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Уже маєте обліковий запис?">
                                     <fontDescription key="titleFontDescription" name=".SFUI-Semibold" family=".AppleSystemUIFont" pointSize="14"/>
@@ -462,7 +462,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pUb-Wh-COG">
-                                <rect key="frame" x="0.0" y="853.33333333333337" width="428" height="1"/>
+                                <rect key="frame" x="0.0" y="853" width="428" height="1"/>
                                 <color key="backgroundColor" systemColor="separatorColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="A4K-nZ-cYA"/>
@@ -524,7 +524,7 @@
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6c-0r-ocl">
-                                <rect key="frame" x="118.66666666666667" y="862.33333333333337" width="190.66666666666663" height="29.666666666666629"/>
+                                <rect key="frame" x="118.66666666666669" y="862" width="191" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Уже маєте обліковий запис?">
                                     <fontDescription key="titleFontDescription" name=".SFUI-Semibold" family=".AppleSystemUIFont" pointSize="14"/>
@@ -534,7 +534,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PEr-zN-Hzu">
-                                <rect key="frame" x="0.0" y="853.33333333333337" width="428" height="1"/>
+                                <rect key="frame" x="0.0" y="853" width="428" height="1"/>
                                 <color key="backgroundColor" systemColor="separatorColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="Awf-bu-lUK"/>
@@ -610,7 +610,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sj9-Zw-kcU">
-                                <rect key="frame" x="118.66666666666667" y="862.33333333333337" width="190.66666666666663" height="29.666666666666629"/>
+                                <rect key="frame" x="118.66666666666669" y="862" width="191" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Уже маєте обліковий запис?">
                                     <fontDescription key="titleFontDescription" name=".SFUI-Semibold" family=".AppleSystemUIFont" pointSize="14"/>
@@ -620,7 +620,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CFv-OX-8KG">
-                                <rect key="frame" x="0.0" y="853.33333333333337" width="428" height="1"/>
+                                <rect key="frame" x="0.0" y="853" width="428" height="1"/>
                                 <color key="backgroundColor" systemColor="separatorColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="OZd-FV-t48"/>
@@ -666,7 +666,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60l-WK-hbc">
-                                <rect key="frame" x="118.66666666666667" y="862.33333333333337" width="190.66666666666663" height="29.666666666666629"/>
+                                <rect key="frame" x="118.66666666666669" y="862" width="191" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Уже маєте обліковий запис?">
                                     <fontDescription key="titleFontDescription" name=".SFUI-Semibold" family=".AppleSystemUIFont" pointSize="14"/>
@@ -676,14 +676,14 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zav-9K-v0n">
-                                <rect key="frame" x="0.0" y="853.33333333333337" width="428" height="1"/>
+                                <rect key="frame" x="0.0" y="853" width="428" height="1"/>
                                 <color key="backgroundColor" systemColor="separatorColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="J7G-q3-h8X"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Завершіть реєстрацію" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2i-la-OAE">
-                                <rect key="frame" x="103.33333333333333" y="241" width="221.33333333333337" height="24"/>
+                                <rect key="frame" x="103.66666666666669" y="241" width="221" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" systemColor="systemBlueColor"/>
                                 <nil key="highlightedColor"/>
@@ -857,14 +857,214 @@
                     <view key="view" contentMode="scaleToFill" id="xXL-MJ-fSm">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Показувати тільки власні дописи" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBj-Rf-zrk">
+                                <rect key="frame" x="16" y="107" width="251" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LDg-ez-vpG">
+                                <rect key="frame" x="363" y="101.66666666666667" width="51" height="31.000000000000014"/>
+                                <connections>
+                                    <action selector="switchValueDidChange:" destination="0ZJ-vE-s3a" eventType="valueChanged" id="Djf-Pl-4xB"/>
+                                </connections>
+                            </switch>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0C9-XQ-yS3">
+                                <rect key="frame" x="0.0" y="148.66666666666669" width="428" height="694.33333333333326"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PostCell" rowHeight="470" id="nX2-zY-K7U" customClass="PostCell" customModule="LinkFade" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="428" height="470"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nX2-zY-K7U" id="lbf-ao-cp9">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="470"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aPg-Xe-MYY">
+                                                    <rect key="frame" x="20" y="12" width="48" height="46.666666666666671"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="48" id="e1A-Q5-RHO"/>
+                                                        <constraint firstAttribute="width" constant="48" id="kui-e0-MJk"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ім'я користувача" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OgI-un-Ts5">
+                                                    <rect key="frame" x="76" y="11" width="133" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-02-29 12:24:26" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLG-JH-cN8">
+                                                    <rect key="frame" x="76" y="39" width="140" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quY-LH-b7J">
+                                                    <rect key="frame" x="360" y="11" width="48" height="34"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="trash.fill" catalog="system"/>
+                                                    <connections>
+                                                        <action selector="deletePost" destination="nX2-zY-K7U" eventType="touchUpInside" id="Vu4-RZ-y06"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sxe-f8-l90">
+                                                    <rect key="frame" x="20" y="75" width="392" height="102"/>
+                                                    <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet tempus nisi, non dapibus nisl. Integer volutpat fringilla elementum. Fusce auctor, risus viverra mollis aliquam, quam massa rutrum purus, sed commodo nisl nulla sit amet mi.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="nm7-Ib-dC6">
+                                                    <rect key="frame" x="20" y="194.66666666666663" width="388" height="247"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="250" id="ORW-si-cEi"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="12"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="nm7-Ib-dC6" secondAttribute="bottom" constant="16" id="6gh-lm-g4X"/>
+                                                <constraint firstItem="TLG-JH-cN8" firstAttribute="top" secondItem="OgI-un-Ts5" secondAttribute="bottom" constant="8" symbolic="YES" id="8gO-eG-7gG"/>
+                                                <constraint firstItem="sxe-f8-l90" firstAttribute="top" secondItem="aPg-Xe-MYY" secondAttribute="bottom" constant="16" id="D4G-SR-o4f"/>
+                                                <constraint firstItem="aPg-Xe-MYY" firstAttribute="leading" secondItem="lbf-ao-cp9" secondAttribute="leadingMargin" id="J53-fV-BVm"/>
+                                                <constraint firstItem="nm7-Ib-dC6" firstAttribute="top" secondItem="sxe-f8-l90" secondAttribute="bottom" constant="16" id="QHU-KB-c7J"/>
+                                                <constraint firstItem="nm7-Ib-dC6" firstAttribute="leading" secondItem="lbf-ao-cp9" secondAttribute="leadingMargin" id="VlL-xt-YKF"/>
+                                                <constraint firstItem="aPg-Xe-MYY" firstAttribute="top" secondItem="lbf-ao-cp9" secondAttribute="topMargin" id="cHI-y4-q4R"/>
+                                                <constraint firstItem="OgI-un-Ts5" firstAttribute="top" secondItem="lbf-ao-cp9" secondAttribute="topMargin" id="csq-Nn-Thh"/>
+                                                <constraint firstItem="sxe-f8-l90" firstAttribute="leading" secondItem="lbf-ao-cp9" secondAttribute="leadingMargin" id="dsu-fe-o0F"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="nm7-Ib-dC6" secondAttribute="trailing" id="mUY-Au-njp"/>
+                                                <constraint firstItem="OgI-un-Ts5" firstAttribute="leading" secondItem="aPg-Xe-MYY" secondAttribute="trailing" constant="8" symbolic="YES" id="rr8-f1-eAX"/>
+                                                <constraint firstAttribute="trailing" secondItem="sxe-f8-l90" secondAttribute="trailing" constant="16" id="uOZ-dK-wPO"/>
+                                                <constraint firstItem="quY-LH-b7J" firstAttribute="trailing" secondItem="lbf-ao-cp9" secondAttribute="trailingMargin" id="vId-x0-0ll"/>
+                                                <constraint firstItem="TLG-JH-cN8" firstAttribute="leading" secondItem="OgI-un-Ts5" secondAttribute="leading" id="xui-uC-DDl"/>
+                                                <constraint firstItem="quY-LH-b7J" firstAttribute="top" secondItem="lbf-ao-cp9" secondAttribute="topMargin" id="yjZ-ZD-eEA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="deleteButton" destination="quY-LH-b7J" id="VnI-SZ-8aQ"/>
+                                            <outlet property="mainImageView" destination="nm7-Ib-dC6" id="cYs-Qf-P5J"/>
+                                            <outlet property="mainLabel" destination="sxe-f8-l90" id="Xog-iH-fzF"/>
+                                            <outlet property="photoImageView" destination="aPg-Xe-MYY" id="WMY-wV-nbW"/>
+                                            <outlet property="publishingDateLabel" destination="TLG-JH-cN8" id="oIH-Rc-lvr"/>
+                                            <outlet property="userNameLabel" destination="OgI-un-Ts5" id="EAK-4K-w0P"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="0ZJ-vE-s3a" id="06Y-fh-u3P"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Yfd-pL-Ph6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LDg-ez-vpG" firstAttribute="centerY" secondItem="GBj-Rf-zrk" secondAttribute="centerY" id="2eN-nx-YIn"/>
+                            <constraint firstItem="0C9-XQ-yS3" firstAttribute="leading" secondItem="Yfd-pL-Ph6" secondAttribute="leading" id="OhP-hD-hBh"/>
+                            <constraint firstItem="Yfd-pL-Ph6" firstAttribute="bottom" secondItem="0C9-XQ-yS3" secondAttribute="bottom" id="XkU-wF-SWK"/>
+                            <constraint firstItem="0C9-XQ-yS3" firstAttribute="top" secondItem="LDg-ez-vpG" secondAttribute="bottom" constant="16" id="Z8d-dn-ykx"/>
+                            <constraint firstItem="GBj-Rf-zrk" firstAttribute="leading" secondItem="Yfd-pL-Ph6" secondAttribute="leading" constant="16" id="epJ-fs-GDA"/>
+                            <constraint firstItem="GBj-Rf-zrk" firstAttribute="top" secondItem="Yfd-pL-Ph6" secondAttribute="top" constant="16" id="lFk-C6-mkO"/>
+                            <constraint firstItem="Yfd-pL-Ph6" firstAttribute="trailing" secondItem="0C9-XQ-yS3" secondAttribute="trailing" id="pCX-vm-fp9"/>
+                            <constraint firstItem="Yfd-pL-Ph6" firstAttribute="trailing" secondItem="LDg-ez-vpG" secondAttribute="trailing" constant="16" id="wkp-ta-tEh"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Головна" image="house.fill" catalog="system" id="BbV-8e-xNb"/>
+                    <connections>
+                        <outlet property="tableView" destination="0C9-XQ-yS3" id="Ix9-3u-h3m"/>
+                        <segue destination="Koe-lM-wby" kind="show" identifier="addPost" id="CyY-0O-ZII"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6MI-hO-vr9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="9212" y="584"/>
+        </scene>
+        <!--Додайте нову розповідь-->
+        <scene sceneID="8Qw-Da-GZy">
+            <objects>
+                <viewController id="Koe-lM-wby" customClass="NewPostViewController" customModule="LinkFade" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v6O-Yj-T8f">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="m5f-H1-Vg5">
+                                <rect key="frame" x="16" y="91" width="396" height="110"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="ITL-rw-KMz"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="Koe-lM-wby" id="J2f-G9-PLr"/>
+                                </connections>
+                            </textView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jab-bR-PfN">
+                                <rect key="frame" x="16" y="218.66666666666663" width="396" height="247"/>
+                                <color key="backgroundColor" systemColor="systemFillColor"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="M5C-b6-kdA"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="hNs-Zd-hBt" appends="YES" id="7Yx-Pl-7AU"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bfy-me-fx2">
+                                <rect key="frame" x="16" y="487" width="396" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Додати"/>
+                                <connections>
+                                    <action selector="addNewPost" destination="Koe-lM-wby" eventType="touchUpInside" id="nfa-4o-FHT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZHq-5A-tQy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jab-bR-PfN" firstAttribute="leading" secondItem="ZHq-5A-tQy" secondAttribute="leading" constant="16" id="2wc-kW-Yod"/>
+                            <constraint firstItem="m5f-H1-Vg5" firstAttribute="top" secondItem="ZHq-5A-tQy" secondAttribute="top" id="G68-bW-ebA"/>
+                            <constraint firstItem="Bfy-me-fx2" firstAttribute="leading" secondItem="ZHq-5A-tQy" secondAttribute="leading" constant="16" id="GZI-5K-lXI"/>
+                            <constraint firstItem="ZHq-5A-tQy" firstAttribute="trailing" secondItem="jab-bR-PfN" secondAttribute="trailing" constant="16" id="MMY-2o-qBM"/>
+                            <constraint firstItem="jab-bR-PfN" firstAttribute="top" secondItem="m5f-H1-Vg5" secondAttribute="bottom" constant="16" id="OWK-es-LcP"/>
+                            <constraint firstItem="ZHq-5A-tQy" firstAttribute="trailing" secondItem="m5f-H1-Vg5" secondAttribute="trailing" constant="16" id="RRr-en-3DP"/>
+                            <constraint firstItem="Bfy-me-fx2" firstAttribute="top" secondItem="jab-bR-PfN" secondAttribute="bottom" constant="20" id="bRP-tU-wko"/>
+                            <constraint firstItem="ZHq-5A-tQy" firstAttribute="trailing" secondItem="Bfy-me-fx2" secondAttribute="trailing" constant="16" id="tHZ-YI-eDS"/>
+                            <constraint firstItem="m5f-H1-Vg5" firstAttribute="leading" secondItem="ZHq-5A-tQy" secondAttribute="leading" constant="16" id="yKE-6L-qLW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Додайте нову розповідь" id="uPi-qD-aUC"/>
+                    <connections>
+                        <outlet property="imageView" destination="jab-bR-PfN" id="ji8-BB-gML"/>
+                        <outlet property="textView" destination="m5f-H1-Vg5" id="4Ay-tI-8mV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SXd-vk-slH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="hNs-Zd-hBt">
+                    <connections>
+                        <action selector="selectImage" destination="Koe-lM-wby" id="gw3-UD-qKu"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="10287" y="584"/>
         </scene>
         <!--Чати-->
         <scene sceneID="vZt-DW-4Hg">
@@ -903,13 +1103,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Електронна адреса" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y11-AO-diW">
-                                <rect key="frame" x="116.33333333333333" y="290.66666666666669" width="195.33333333333337" height="26.333333333333314"/>
+                                <rect key="frame" x="116.66666666666669" y="290.66666666666669" width="195" height="26.333333333333314"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <color key="textColor" systemColor="secondaryLabelColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Cr-hP-d3i">
-                                <rect key="frame" x="92.333333333333329" y="333" width="243.33333333333337" height="35"/>
+                                <rect key="frame" x="92.666666666666686" y="333" width="243" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="camera.badge.ellipsis" catalog="system" title="Змінити фото профілю" imagePadding="8"/>
                             </button>
@@ -984,10 +1184,10 @@
             </objects>
             <point key="canvasLocation" x="7053" y="1306"/>
         </scene>
-        <!--Base Tab Bar Controller-->
+        <!--Main Tab Bar Controller-->
         <scene sceneID="gef-LT-sqo">
             <objects>
-                <tabBarController id="tNz-99-CJz" customClass="BaseTabBarController" customModule="LinkFade" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="tNz-99-CJz" customClass="MainTabBarController" customModule="LinkFade" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="KaO-vo-Tre"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ovx-eh-k2u">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
@@ -1021,6 +1221,8 @@
         <image name="line.3.horizontal" catalog="system" width="128" height="65"/>
         <image name="person.2.fill" catalog="system" width="128" height="81"/>
         <image name="person.circle" catalog="system" width="128" height="123"/>
+        <image name="photo" catalog="system" width="128" height="93"/>
+        <image name="trash.fill" catalog="system" width="119" height="128"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
@@ -1038,6 +1240,9 @@
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
