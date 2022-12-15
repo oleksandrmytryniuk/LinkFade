@@ -10,7 +10,6 @@ import UIKit
 final class InviteFriendCell: UITableViewCell, Identifiable {
     @IBOutlet private weak var profileImageView: UIImageView!
     @IBOutlet private weak var nameLabel: UILabel!
-    @IBOutlet private weak var inviteButton: UIButton!
     private var inviteButtonAction: (() -> Void)?
     
     func configure(photoURL: URL?, userName: String?, inviteButtonAction: (() -> Void)? = nil) {
@@ -21,12 +20,7 @@ final class InviteFriendCell: UITableViewCell, Identifiable {
         self.inviteButtonAction = inviteButtonAction
     }
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        inviteButton.addTarget(self, action: #selector(handleInviteAction), for: .touchUpInside)
-    }
-    
-    @objc private func handleInviteAction() {
+    @IBAction private func inviteButtonDidTouchUpInside() {
         inviteButtonAction?()
     }
 }

@@ -22,7 +22,8 @@ final class PostsViewController: UIViewController {
             image: UIImage(systemName: "plus"),
             style: .plain,
             target: self,
-            action: #selector(addPost))
+            action: #selector(addPost)
+        )
         viewModel?.addListener()
     }
     
@@ -32,7 +33,6 @@ final class PostsViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        tabBarController?.navigationItem.rightBarButtonItem = nil
         viewModel?.removeListener()
     }
     

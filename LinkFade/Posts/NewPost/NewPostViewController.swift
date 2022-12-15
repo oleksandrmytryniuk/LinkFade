@@ -88,6 +88,9 @@ extension NewPostViewController: PHPickerViewControllerDelegate {
                 if error == nil, let image = object as? UIImage {
                     DispatchQueue.main.async { [weak self] in
                         self?.imageView.image = image
+                        if !image.isSymbolImage {
+                            self?.imageView.contentMode = .scaleAspectFill
+                        }
                     }
                 }
             }

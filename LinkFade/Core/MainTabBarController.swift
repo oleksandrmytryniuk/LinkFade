@@ -12,6 +12,7 @@ final class MainTabBarController: UITabBarController {
         super.viewDidLoad()
         configureLogo()
         configureHome()
+        configureFriends()
         configureMenu()
     }
     
@@ -26,6 +27,11 @@ final class MainTabBarController: UITabBarController {
     private func configureHome() {
         let viewController = viewControllers?.first { $0 is PostsViewController }
         (viewController as? PostsViewController)?.viewModel = PostsViewModel()
+    }
+    
+    private func configureFriends() {
+        let viewController = viewControllers?.first { $0 is FriendsViewController }
+        (viewController as? FriendsViewController)?.viewModel = FriendsViewModel()
     }
     
     private func configureMenu() {

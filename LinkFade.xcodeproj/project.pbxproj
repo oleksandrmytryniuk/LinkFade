@@ -61,6 +61,7 @@
 		0EE8BB482949D17700ABA15C /* NewPostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE8BB472949D17700ABA15C /* NewPostService.swift */; };
 		0EE8BB4C2949E45800ABA15C /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0EE8BB4B2949E45800ABA15C /* FirebaseStorage */; };
 		0EE8BB4E2949EF1C00ABA15C /* NewPostServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE8BB4D2949EF1C00ABA15C /* NewPostServiceProtocol.swift */; };
+		0EE8BB52294B318F00ABA15C /* FriendsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE8BB51294B318F00ABA15C /* FriendsViewModelProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -116,6 +117,7 @@
 		0EE8BB432949AEF600ABA15C /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
 		0EE8BB472949D17700ABA15C /* NewPostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostService.swift; sourceTree = "<group>"; };
 		0EE8BB4D2949EF1C00ABA15C /* NewPostServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostServiceProtocol.swift; sourceTree = "<group>"; };
+		0EE8BB51294B318F00ABA15C /* FriendsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewModelProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -297,14 +299,13 @@
 		0EE8BB2529476DC200ABA15C /* Friends */ = {
 			isa = PBXGroup;
 			children = (
+				0EE8BB50294A8B6200ABA15C /* Model */,
+				0EE8BB4F294A8B3100ABA15C /* Search */,
 				0EE8BB2629476DC200ABA15C /* FriendsViewController.swift */,
 				0EE8BB2729476DC200ABA15C /* FriendsViewModel.swift */,
 				0EE8BB2829476DC200ABA15C /* InviteFriendCell.swift */,
-				0EE8BB2929476DC200ABA15C /* FriendsSearchViewModel.swift */,
-				0EE8BB2A29476DC200ABA15C /* FriendsSearchViewModelProtocol.swift */,
-				0EE8BB2B29476DC200ABA15C /* FriendsSearchViewController.swift */,
-				0EE8BB2C29476DC200ABA15C /* FriendRequest.swift */,
 				0EE8BB2D29476DC200ABA15C /* TableContentType.swift */,
+				0EE8BB51294B318F00ABA15C /* FriendsViewModelProtocol.swift */,
 			);
 			path = Friends;
 			sourceTree = "<group>";
@@ -317,6 +318,24 @@
 				0EE8BB4D2949EF1C00ABA15C /* NewPostServiceProtocol.swift */,
 			);
 			path = NewPost;
+			sourceTree = "<group>";
+		};
+		0EE8BB4F294A8B3100ABA15C /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				0EE8BB2B29476DC200ABA15C /* FriendsSearchViewController.swift */,
+				0EE8BB2929476DC200ABA15C /* FriendsSearchViewModel.swift */,
+				0EE8BB2A29476DC200ABA15C /* FriendsSearchViewModelProtocol.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		0EE8BB50294A8B6200ABA15C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0EE8BB2C29476DC200ABA15C /* FriendRequest.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -431,6 +450,7 @@
 				0E04E3802938077D00C14A53 /* EmailViewController.swift in Sources */,
 				0ECCE51B2936715B00480653 /* UserProfileBuilder.swift in Sources */,
 				0EE8BB3729477B3500ABA15C /* ImageLoader.swift in Sources */,
+				0EE8BB52294B318F00ABA15C /* FriendsViewModelProtocol.swift in Sources */,
 				0EE8BB3D2948DCA500ABA15C /* PostCellModel.swift in Sources */,
 				0EE8BB412948F4F000ABA15C /* PostsViewModelProtocol.swift in Sources */,
 				0E4A8442293E36DB00C768EB /* UserData.swift in Sources */,

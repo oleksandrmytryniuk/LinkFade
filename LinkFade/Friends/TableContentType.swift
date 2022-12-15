@@ -6,6 +6,6 @@
 //
 
 enum TableContentType {
+    case friends
     case requests
-    case userProfilesWithRecommendations
 }

@@ -27,6 +27,7 @@ final class MenuViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        tabBarController?.navigationItem.rightBarButtonItem = nil
         viewModel?.addListener()
     }
     
